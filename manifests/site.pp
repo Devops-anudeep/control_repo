@@ -1,7 +1,7 @@
 node default {
   file {'/root/README':
     ensure  => file,
-    content => 'Hello Puppet',
+    content => $os,
     owner   => 'root',
   }
 }
